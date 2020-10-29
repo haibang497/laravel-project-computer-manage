@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $users=DB::table('users')->get();
+    return view('user.userlist', ['users'=>$users]);
+});
+
+Route::get('/checkfail', function (){
+    echo "checkfail page";
     return view('home.admin');
 });
+Route::get('checkage/{age?}', function ($age) {
+    $users=DB::table('users')->get();
+    return view('user.userlist', ['users'=>$users]);
+})->middleware(\App\Http\Middleware\CheckAge::class);
