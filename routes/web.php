@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,5 @@ Route::get('checkage/{age?}', function ($age) {
     $users=DB::table('users')->get();
     return view('user.userlist', ['users'=>$users]);
 })->middleware(\App\Http\Middleware\CheckAge::class);
+
+Route::resource('users', UserController::class);
