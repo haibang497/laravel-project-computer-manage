@@ -16,7 +16,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    $users=DB::table('users')->get();
+    $users=DB::table('computers')->get();
     return view('user.userlist', ['users'=>$users]);
 });
 

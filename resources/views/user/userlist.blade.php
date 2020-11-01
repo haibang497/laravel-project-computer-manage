@@ -8,14 +8,20 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Email</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Day get</th>
+                    <th>Status</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr @foreach($users as $user)>
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
-                    <td>{{$user->email}}</td>
+                    <td>{{$user->brand}}</td>
+                    <td>{{$user->price}}</td>
+                    <td>{{$user->dayGet}}</td>
+                    <td>{{$user->status}}</td>
                 </tr @endforeach>
                 </tbody>
             </table>
