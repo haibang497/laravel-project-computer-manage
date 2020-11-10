@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -30,7 +31,7 @@ class ProfileController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,42 +42,42 @@ class ProfileController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $user=DB::table('users')->find($id);
-        return View('user.show', ['user'=>$user]);
+        $profile = DB::table('profiles')->where('user_id', $id)->first();
+        return View('profile.show', ['profile' => $profile]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
-        //
+        $profile = DB::table('profiles')->where('user_id', $id)->first();
+        return View('profile.edit', ['profile' => $profile]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-        //
+        //$profile = DB::table('profiles')->find($id);
+        $profile = new Profile();
+        $profile->full_name = $request->input('full_name');
+        $profile->address = $request->input('address');
+        $profile->birthday = $request->input('birthday');
+        $affected = DB::table('profiles')
+            ->where('id', $id)
+            ->update(['full_name' => $profile->full_name,
+                'address' => $profile->address,
+                'birthday' => $profile->birthday
+            ]);
+        return redirect('/users');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

@@ -16,18 +16,20 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    $users=DB::table('computers')->get();
-    return view('user.userlist', ['users'=>$users]);
+    $users = \App\Models\Computer::all();
+//    $users=DB::table('computers')->get();
+    return view('user.userlist', ['users' => $users]);
 });
 
-Route::get('/checkfail', function (){
+Route::get('/checkfail', function () {
     echo "checkfail page";
     return view('home.admin');
 });
 Route::get('checkage/{age?}', function ($age) {
-    $users=DB::table('users')->get();
-    return view('user.userlist', ['users'=>$users]);
+    $users=\App\Models\User::all();
+//    $users = DB::table('users')->get();
+    return view('user.userlist', ['users' => $users]);
 })->middleware(\App\Http\Middleware\CheckAge::class);
 
 Route::resource('users', UserController::class);
-Route::resource('profile', ProfileController::class);
+Route::resource('profiles', ProfileController::class);
