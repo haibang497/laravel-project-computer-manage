@@ -37,5 +37,6 @@ Route::resource('profiles', ProfileController::class);
 Route::resource('details', ComputerController::class);
 Route::resource('computers', ComputerController::class);
 Route::get('/delete-computer/{id}', [ComputerController::class, 'destroy'])->name('computer.delete');
-Route::resource('category', CategoryController::class);
+Route::resource('categories', CategoryController::class);
+Route::post('/add-new-cate', [CategoryController::class, 'addCate'])->name('categories.addCate');
 Route::get('/addcate', [CategoryController::class, 'create']);

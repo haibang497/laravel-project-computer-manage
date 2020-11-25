@@ -21,14 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Computer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Computer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/userlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/userlist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/addCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/addCat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +201,7 @@
       <workItem from="1605614919603" duration="4834000" />
       <workItem from="1605837148328" duration="6510000" />
       <workItem from="1606222431719" duration="2458000" />
-      <workItem from="1606307750452" duration="3462000" />
+      <workItem from="1606307750452" duration="4683000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
