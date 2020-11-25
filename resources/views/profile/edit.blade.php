@@ -2,21 +2,26 @@
 
 @section('content')
 
-    <form class="user" action="{{ route('profiles.update',['profile' => $profile->id]) }}" method="POST">
-    @csrf
-    @method('PUT')<!-- khai báo này dùng để thiết lập phương thức PUT nếu không khai báo thì khi submit không thiết lập HttpPUT -->
+    <div class="container">
+        <h2>Edit</h2>
 
-        <div class="form-group" >
-            <input type="text" name="full_name" class="form-control form-control-user" id="full_name" placeholder="Full Name" value="{{$profile->full_name}}">
-        </div>
-        <div class="form-group">
-            <input type="text" name="address" class="form-control form-control-user" id="address" placeholder="Address" value="{{$profile->address}}">
-        </div>
-        <div class="form-group row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <input type="date" class="form-control form-control-user" name="birthday" id="birthday" placeholder="Birthday" value="{{$profile->birthday}}">
+        <form class="user" action="{{ route('profiles.update',['profile' => $profile->id]) }}" method="POST">
+            @csrf
+            @method('PUT')
+            <x-package-alert type="warning" :message="$profile->id"/>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" class="form-control" id="full_name" placeholder="Enter full name" name="full_name" value="{{$profile->full_name}}">
             </div>
-        </div>
-        <input type="submit" class="btn btn-primary" value="Update">
-    </form>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter address" name="address" value="{{$profile->address}}">
+            </div>
+            <div>
+                <label for="birthday">Birthday</label>
+                <input type="date" class="form-control" id="birthday" placeholder="Enter password" name="birthday" value="{{$profile->birthday}}">
+            </div>
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </form>
+    </div>
 @endsection

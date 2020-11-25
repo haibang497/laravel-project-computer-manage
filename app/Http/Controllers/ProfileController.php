@@ -8,43 +8,31 @@ use Illuminate\Support\Facades\DB;
 
 class ProfileController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         //
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        //
+        return view('profile.create');
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'user_id'=>'required',
+            'full_name'=>'required',
+            'address'=>'required',
+            'birthday'=>'required'
+        ]);
+        DB::table('profiles')->insert([
+            'user_id'=>$request->user_id,
+            'full_name'=>$request->full_name,
+            'address'=>$request->address,
+            'birthday'=>$request->birthday
+        ]);
+        return back()->with('success', 'Add success');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         $profile = DB::table('profiles')->where('user_id', $id)->first();
@@ -60,7 +48,6 @@ class ProfileController extends Controller
 
     public function update(Request $request, $id)
     {
-        //$profile = DB::table('profiles')->find($id);
         $profile = new Profile();
         $profile->full_name = $request->input('full_name');
         $profile->address = $request->input('address');

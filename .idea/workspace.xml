@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0b5d93e-b849-4549-b704-f2a891e0ba4d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c0b5d93e-b849-4549-b704-f2a891e0ba4d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Computer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Computer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/userlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/userlist.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,6 +200,14 @@
       <workItem from="1604557664855" duration="772000" />
       <workItem from="1604627989226" duration="6764000" />
       <workItem from="1604974705007" duration="97000" />
+      <workItem from="1605060907073" duration="601000" />
+      <workItem from="1605234132831" duration="3891000" />
+      <workItem from="1605489216077" duration="5016000" />
+      <workItem from="1605573820655" duration="7994000" />
+      <workItem from="1605614919603" duration="4834000" />
+      <workItem from="1605837148328" duration="6510000" />
+      <workItem from="1606222431719" duration="2458000" />
+      <workItem from="1606307750452" duration="3462000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
@@ -230,10 +243,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="254" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1604029105663" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604223898959">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605493553765">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604223898959" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605493553765" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604230164968">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -254,10 +267,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1604029163598" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1604634908051">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606223259595">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604634908051" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606223259595" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604224973804">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

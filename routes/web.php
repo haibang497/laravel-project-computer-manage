@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\ComputerController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +19,7 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     $users = \App\Models\Computer::all();
-//    $users=DB::table('computers')->get();
-    return view('user.userlist', ['users' => $users]);
+    return view('computer.computer', ['users' => $users]);
 });
 
 Route::get('/checkfail', function () {
@@ -33,3 +34,8 @@ Route::get('checkage/{age?}', function ($age) {
 
 Route::resource('users', UserController::class);
 Route::resource('profiles', ProfileController::class);
+Route::resource('details', ComputerController::class);
+Route::resource('computers', ComputerController::class);
+Route::get('/delete-computer/{id}', [ComputerController::class, 'destroy'])->name('computer.delete');
+Route::resource('category', CategoryController::class);
+Route::get('/addcate', [CategoryController::class, 'create']);
