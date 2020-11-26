@@ -23,7 +23,8 @@ class ComputerController extends Controller
             'brand'=>'required',
             'price'=>'required',
             'dayGet'=>'required',
-            'status'=>'required'
+            'status'=>'required',
+            'cate_id'=>'required'
         ]);
         DB::table('computers')->insert([
             'name'=>$request->name,
@@ -60,6 +61,7 @@ class ComputerController extends Controller
                 'price' => $computer->price,
                 'dayGet' => $computer->dayGet,
                 'status' => $computer->status,
+                'cate_id'=>$computer->cate_id
             ]);
         return back()->with('success', 'Update Success');
     }
