@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\DB;
 
 class CategoryController extends Controller
 {
+
+    public function showProduct()
+    {
+        return view('category.showProduct');
+    }
+
     public function index()
     {
         $cates=DB::table('categories')->get();

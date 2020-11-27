@@ -16,14 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +207,7 @@
       <workItem from="1606222431719" duration="2458000" />
       <workItem from="1606307750452" duration="4683000" />
       <workItem from="1606397533659" duration="723000" />
-      <workItem from="1606441508001" duration="1605000" />
+      <workItem from="1606441508001" duration="2787000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
@@ -212,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604224939049</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="small error with foreign key">
+      <created>1606443457322</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606443457322</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +234,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -232,7 +255,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="update profile" />
+    <MESSAGE value="small error with foreign key" />
+    <option name="LAST_COMMIT_MESSAGE" value="small error with foreign key" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029105663">
@@ -263,14 +287,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1604029163598" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606223259595">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606443604617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606223259595" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604224973804">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606443604617" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606443486022">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604224973804" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606443486022" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604557901591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
