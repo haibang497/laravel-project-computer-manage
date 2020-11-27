@@ -23,7 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +203,7 @@
       <workItem from="1606222431719" duration="2458000" />
       <workItem from="1606307750452" duration="4683000" />
       <workItem from="1606397533659" duration="723000" />
+      <workItem from="1606441508001" duration="1605000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>

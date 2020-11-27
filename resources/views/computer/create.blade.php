@@ -40,8 +40,8 @@
                 <input type="int" class="form-control" id="status" placeholder="Enter status" name="status" >
             </div>
             <div>
-                <label for="cate_id">Category ID</label>
-                <input type="int" class="form-control" id="cate_id" placeholder="Enter category id" name="cate_id" >
+                <label for="category_id">Category ID</label>
+                <input type="int" class="form-control" id="category_id" placeholder="Enter category id" name="category_id" >
             </div>
             <br/>
             <button type="submit" class="btn btn-success">Submit</button>

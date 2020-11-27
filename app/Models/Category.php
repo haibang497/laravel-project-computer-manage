@@ -12,6 +12,6 @@ class Category extends Model
 
     public function computers()
     {
-        return $this->hasMany(Computer::class);
+        return $this->hasMany(Computer::class, 'category_id');
     }
 }
