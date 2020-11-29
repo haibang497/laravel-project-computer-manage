@@ -36,8 +36,8 @@
                 <input type="date" class="form-control" id="dayGet" name="dayGet" >
             </div>
             <div>
-                <label for="status">Status</label>
-                <input type="int" class="form-control" id="status" placeholder="Enter status" name="status" >
+                <label for="image">Image</label>
+                <input type="int" class="form-control" id="image" placeholder="Enter status" name="image" >
             </div>
             <div>
                 <label for="category_id">Category ID</label>

@@ -17,8 +17,8 @@
                     <th>Name</th>
                     <th>Brand</th>
                     <th>Price</th>
-                    <th>Day get</th>
-                    <th>Status</th>
+                    <th>Image</th>
+                    <th>Category</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -28,8 +28,8 @@
                     <td>{{$user->name}}</td>
                     <td>{{$user->brand}}</td>
                     <td>{{$user->price}}</td>
-                    <td>{{$user->dayGet}}</td>
-                    <td>{{$user->status}}</td>
+                    <td>{{$user->image}}</td>
+                    <td>{{$user->category->name}}</td>
                     <td><button class="btn btn-primary"><a href="/details/{{$user->id}}" style="color: white; text-decoration: none">Show</a></button>
                         <button class="btn btn-danger"><a href="/delete-computer/{{$user->id}}" style="color: white; text-decoration: none">Delete</a></button>
                         <button class="btn btn-primary"><a href="/computers/{{$user->id}}/edit" style="color: white; text-decoration: none">Edit</a></button>

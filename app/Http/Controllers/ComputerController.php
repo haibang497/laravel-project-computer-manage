@@ -23,7 +23,7 @@ class ComputerController extends Controller
             'brand'=>'required',
             'price'=>'required',
             'dayGet'=>'required',
-            'status'=>'required',
+            'image'=>'required',
             'category_id'=>'required'
         ]);
         DB::table('computers')->insert([
@@ -31,7 +31,7 @@ class ComputerController extends Controller
             'brand'=>$request->brand,
             'price'=>$request->price,
             'dayGet'=>$request->dayGet,
-            'status'=>$request->status,
+            'image'=>$request->image,
             'category_id'=>$request->category_id
         ]);
         return back()->with('success', 'Add successfully');
@@ -53,7 +53,7 @@ class ComputerController extends Controller
         $computer->brand = $request->input('brand');
         $computer->price = $request->input('price');
         $computer->dayGet = $request->input('dayGet');
-        $computer->status = $request->input('status');
+        $computer->status = $request->input('image');
         $computer->category_id = $request->input('category_id');
         $affected = DB::table('computers')
             ->where('id', $id)
@@ -61,7 +61,7 @@ class ComputerController extends Controller
                 'brand' => $computer->brand,
                 'price' => $computer->price,
                 'dayGet' => $computer->dayGet,
-                'status' => $computer->status,
+                'image' => $computer->image,
                 'category_id'=>$computer->category_id
             ]);
         return back()->with('success', 'Update Success');

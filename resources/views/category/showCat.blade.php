@@ -13,11 +13,13 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Description</th>
+                    <th>View Product</th>
                 </thead>
                 <tbody @foreach($cates as $cate)>
                 <td>{{$cate->id}}</td>
                 <td>{{$cate->name}}</td>
                 <td>{{$cate->description}}</td>
+                <td></td>
                 </tbody @endforeach>
             </table>
         </div>

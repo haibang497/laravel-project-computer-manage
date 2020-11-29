@@ -40,3 +40,5 @@ Route::get('/delete-computer/{id}', [ComputerController::class, 'destroy'])->nam
 Route::resource('categories', CategoryController::class);
 Route::post('/add-new-cate', [CategoryController::class, 'addCate'])->name('categories.addCate');
 Route::get('/addcate', [CategoryController::class, 'create']);
+Route::get('/get-computer/{id}', [CategoryController::class, 'getProductFromCate']);
+Route::get('/categories/{id}', [CategoryController::class], 'show');

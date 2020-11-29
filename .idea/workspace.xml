@@ -28,6 +28,16 @@
     <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Computer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Computer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/computer/computer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/computer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/computer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/computer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +217,8 @@
       <workItem from="1606222431719" duration="2458000" />
       <workItem from="1606307750452" duration="4683000" />
       <workItem from="1606397533659" duration="723000" />
-      <workItem from="1606441508001" duration="2787000" />
+      <workItem from="1606441508001" duration="6744000" />
+      <workItem from="1606528743291" duration="8706000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
@@ -223,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606443457322</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new view">
+      <created>1606444647005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606444647005</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +274,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update profile" />
     <MESSAGE value="small error with foreign key" />
-    <option name="LAST_COMMIT_MESSAGE" value="small error with foreign key" />
+    <MESSAGE value="new view" />
+    <option name="LAST_COMMIT_MESSAGE" value="new view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029105663">
@@ -291,10 +310,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606443604617" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606443486022">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606444656362">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606443486022" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606444656362" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1606532866807">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606532866807" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604557901591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

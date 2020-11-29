@@ -20,7 +20,7 @@ class CreateComputersTable extends Migration
             $table->string('brand');
             $table->integer('price');
             $table->date('dayGet');
-            $table->integer('status');
+            $table->integer('image');
             $table->integer('category_id');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
         });

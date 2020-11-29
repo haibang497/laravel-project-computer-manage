@@ -27,8 +27,8 @@
                 <input type="date" class="form-control" id="dayGet" placeholder="Enter password" name="dayGet" value="{{$computer->dayGet}}">
             </div>
             <div>
-                <label for="status">Status</label>
-                <input type="int" class="form-control" id="status" placeholder="Enter password" name="status" value="{{$computer->status}}">
+                <label for="image">Status</label>
+                <input type="int" class="form-control" id="status" placeholder="Enter image" name="image" value="{{$computer->image}}">
             </div>
         <button type="submit" class="btn btn-primary">Update</button>
         </form>
