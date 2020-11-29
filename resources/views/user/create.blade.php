@@ -17,15 +17,23 @@
         @if(Session::has('success') )
             <x-package-alert type="success" message="Add successfully"/>
         @endif
-        <form action="{{route('profiles.store')}}" method="POST">
+        <form action="{{route('users.store')}}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="user_id">User's Id</label>
-                <input type="int" class="form-control" id="user_id" placeholder="Enter user id" name="user_id">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
             </div>
             <div class="form-group">
                 <label for="full_name">Full Name</label>
                 <input type="text" class="form-control" id="full_name" placeholder="Enter full name" name="full_name">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" >
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
             </div>
             <div class="form-group">
                 <label for="address">Address</label>
@@ -35,10 +43,11 @@
                 <label for="birthday">Birthday</label>
                 <input type="date" class="form-control" id="birthday" placeholder="Choose birthday" name="birthday" >
             </div>
-             <br/>
+            <br/>
             <button type="submit" class="btn btn-success">Submit</button>
         </form>
     </div>
 @endsection
+
 
 

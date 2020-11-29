@@ -27,61 +27,56 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('user.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name'=>'required',
+            'full_name'=>'required',
+            'password'=>'required',
+            'email'=>'required',
+            'address'=>'required',
+            'birthday'=>'required'
+        ]);
+        DB::table('users')->insert([
+            'name'=>$request->name,
+            'full_name'=>$request->full_name,
+            'password'=>$request->password,
+            'email'=>$request->email,
+            'address'=>$request->address,
+            'birthday'=>$request->birthday
+        ]);
+        return back()->with('success', 'Add success');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         $user=DB::table('users')->find($id);
         return View('user.show', ['user'=>$user]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
-        //
+        $user=DB::table('users')->where('id', $id)->first();
+        return view('user.edit', ['users'=>$user]);
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-        //
+        $user = new User();
+        $user->full_name = $request->input('full_name');
+        $user->address = $request->input('address');
+        $user->birthday = $request->input('birthday');
+        $affected = DB::table('users')
+            ->where('id', $id)
+            ->update([
+                'full_name' => $user->full_name,
+                'address' => $user->address,
+                'birthday' => $user->birthday
+            ]);
+        return back()->with('success', 'Update Success');
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         //

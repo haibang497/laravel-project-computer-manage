@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\ComputerController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
@@ -33,7 +32,7 @@ Route::get('checkage/{age?}', function ($age) {
 })->middleware(\App\Http\Middleware\CheckAge::class);
 
 Route::resource('users', UserController::class);
-Route::resource('profiles', ProfileController::class);
+Route::resource('view-detail', UserController::class);
 Route::resource('details', ComputerController::class);
 Route::resource('computers', ComputerController::class);
 Route::get('/delete-computer/{id}', [ComputerController::class, 'destroy'])->name('computer.delete');

@@ -18,7 +18,9 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'full_name',
         'email',
+        'address',
         'password',
     ];
 
@@ -40,4 +42,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function order()
+    {
+        return $this->hasOne('App\Models\Order');
+    }
 }

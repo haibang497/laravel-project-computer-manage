@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card-body">
-        <a href="{{route('profiles.create')}}" class="btn btn-success" role="button">Add New</a><br/>
+        <a href="{{route('users.create')}}" class="btn btn-success" role="button">Add New</a><br/>
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
@@ -18,7 +18,7 @@
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
-                    <td><button class="btn btn-primary"><a href="/profiles/{{$user->id}}" style="color: white; text-decoration: none">Show</a></button>
+                    <td><button class="btn btn-primary"><a href="/users/{{$user->id}}" style="color: white; text-decoration: none">Show</a></button>
                     </td>
                 </tr @endforeach>
                 </tbody>
