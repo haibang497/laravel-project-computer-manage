@@ -26,14 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
+      <change afterPath="$PROJECT_DIR$/resources/views/category/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Computer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Computer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ComputerFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ComputerFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +213,9 @@
       <workItem from="1606397533659" duration="723000" />
       <workItem from="1606441508001" duration="6744000" />
       <workItem from="1606528743291" duration="8706000" />
-      <workItem from="1606610580045" duration="11721000" />
+      <workItem from="1606610580045" duration="12087000" />
+      <workItem from="1606641348921" duration="1194000" />
+      <workItem from="1606646643807" duration="2198000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
@@ -259,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606623822992</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update factory for all tables">
+      <created>1606629602194</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606629602194</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +302,9 @@
     <MESSAGE value="new view" />
     <MESSAGE value="finish show product with category" />
     <MESSAGE value="update user and delete profile table" />
-    <option name="LAST_COMMIT_MESSAGE" value="update user and delete profile table" />
+    <MESSAGE value="update factory for all tables" />
+    <MESSAGE value="finish crud category" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish crud category" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029105663">
@@ -326,14 +335,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1604029163598" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606618201722">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606647512236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606618201722" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606623828968">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606647512236" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606648852133">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606623828968" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606648852133" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1606532866807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

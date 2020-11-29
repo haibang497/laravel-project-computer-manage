@@ -41,3 +41,4 @@ Route::post('/add-new-cate', [CategoryController::class, 'addCate'])->name('cate
 Route::get('/addcate', [CategoryController::class, 'create']);
 Route::get('/get-computer/{id}', [CategoryController::class, 'getProductFromCate']);
 Route::get('/categories/{id}', [CategoryController::class], 'show');
+Route::get('/delete-categories/{id}', [CategoryController::class, 'destroy'])->name('category.delete');

@@ -5,7 +5,11 @@
                 <div class="sb-sidenav-menu-heading">Core</div>
                 <a class="nav-link" href="/categories">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Dashboard
+                    Danh Mục
+                </a>
+                <a class="nav-link" href="/">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Sản Phẩm
                 </a>
                 <div class="sb-sidenav-menu-heading">Interface</div>
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">

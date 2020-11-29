@@ -13,13 +13,16 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Description</th>
-                    <th>View Product</th>
+                    <th>Action</th>
                 </thead>
                 <tbody @foreach($cates as $cate)>
                 <td>{{$cate->id}}</td>
                 <td>{{$cate->name}}</td>
                 <td>{{$cate->description}}</td>
-                <td></td>
+                <td>
+                    <button class="btn btn-primary"><a href="/categories/{{$cate->id}}/edit" style="color: white; text-decoration: none">Edit</a></button>
+                    <button class="btn btn-danger"><a href="/delete-categories/{{$cate->id}}" style="color: white; text-decoration: none">Delete</a></button>
+                </td>
                 </tbody @endforeach>
             </table>
         </div>

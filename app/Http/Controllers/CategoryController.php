@@ -44,4 +44,30 @@ class CategoryController extends Controller
         $cate_product=Computer::where('category_id', $id)->get();
         return view('category.showProduct', ['cate_product'=>$cate_product]);
     }
+
+    public function edit($id)
+    {
+        $category=DB::table('categories')->where('id', $id)->first();
+        return View('category.edit', ['category'=>$category]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $category=new Category();
+        $category->name=$request->input('name');
+        $category->description=$request->input('description');
+        $affected = DB::table('categories')
+            ->where('id', $id)
+            ->update([
+                'name'=>$category->name,
+                'description'=>$category->description
+            ]);
+        return back()->with('success', 'Update Success');
+    }
+
+    public function destroy($id)
+    {
+        DB::table('categories')->where('id', $id)->delete();
+        return back()->with('success', 'Delete Successfully');
+    }
 }
