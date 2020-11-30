@@ -45,3 +45,5 @@ Route::get('/categories/{id}', [CategoryController::class], 'show');
 Route::get('/delete-categories/{id}', [CategoryController::class, 'destroy'])->name('category.delete');
 Route::resource('orders', OrderController::class);
 Route::resource('detail-order', OrderController::class);
+Route::get('/get-order/{id}', [UserController::class, 'getOrder']);
+Route::get('/get-user/{id}', [OrderController::class, 'getUser']);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -36,5 +37,11 @@ class OrderController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getUser($id)
+    {
+        $user=Order::find($id)->user;
+        return $user;
     }
 }

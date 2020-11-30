@@ -7,6 +7,6 @@
         <h4>{{$order->title}}</h4>
         <h4>{{$order->dayCreate}}</h4>
         <h4>{{$order->status}}</h4>
-        <h4>{{$order->user->name}}</h4>
+        <h4>{{$order->user_id}}</h4>
     </div>
 @endsection

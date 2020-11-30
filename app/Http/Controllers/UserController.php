@@ -81,4 +81,10 @@ class UserController extends Controller
     {
         //
     }
+
+    public function getOrder($id)
+    {
+        $order=User::find($id)->order;
+        return $order;
+    }
 }

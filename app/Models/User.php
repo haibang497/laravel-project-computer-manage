@@ -45,6 +45,6 @@ class User extends Authenticatable
 
     public function order()
     {
-        return $this->hasOne('App\Models\Order', 'user_id');
+        return $this->hasOne('App\Models\Order');
     }
 }
