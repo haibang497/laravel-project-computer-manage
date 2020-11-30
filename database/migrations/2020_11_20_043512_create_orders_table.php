@@ -17,6 +17,8 @@ class CreateOrdersTable extends Migration
             $table->increments('id');//mặc định
             $table->integer('user_id');
             $table->string('title');
+            $table->string('status');
+            $table->date('dayCreate');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });

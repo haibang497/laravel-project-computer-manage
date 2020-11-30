@@ -24,7 +24,9 @@ class OrderFactory extends Factory
     {
         return [
             'user_id' => User::all()->random()->id,
-            'title' => $this->faker->sentence
+            'title' => $this->faker->sentence,
+            'status'=>$this->faker->word,
+            'dayCreate'=>$this->faker->dateTime
         ];
     }
 }

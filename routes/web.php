@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ComputerController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
@@ -42,3 +43,5 @@ Route::get('/addcate', [CategoryController::class, 'create']);
 Route::get('/get-computer/{id}', [CategoryController::class, 'getProductFromCate']);
 Route::get('/categories/{id}', [CategoryController::class], 'show');
 Route::get('/delete-categories/{id}', [CategoryController::class, 'destroy'])->name('category.delete');
+Route::resource('orders', OrderController::class);
+Route::resource('detail-order', OrderController::class);
