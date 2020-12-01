@@ -10,6 +10,7 @@
                     <th>Title</th>
                     <th>Day Create</th>
                     <th>Status</th>
+                    <th>User</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -19,6 +20,7 @@
                     <td>{{$order->title}}</td>
                     <td>{{$order->dayCreate}}</td>
                     <td>{{$order->status}}</td>
+                    <td>{{$order->name}}</td>
                     <td><button class="btn btn-primary"><a href="/detail-order/{{$order->id}}" style="color: white; text-decoration: none">Show</a></button></td>
                 </tr @endforeach>
                 </tbody>
