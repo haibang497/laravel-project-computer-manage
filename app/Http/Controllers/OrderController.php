@@ -24,9 +24,11 @@ class OrderController extends Controller
     }
     public function show($id)
     {
-        $order=DB::table('orders')
-            ->join('users', 'users.id', '=', 'orders.user_id')
-            ->select('orders.id', 'orders.title', 'orders.dayCreate', 'orders.status', 'users.name')
+        $order=DB::table('users')
+            ->join('orders', 'users.id', '=', 'orders.user_id')
+            ->join('computer_order', 'orders.id', '=', 'computer_order.order_id')
+            ->join('computers', 'computer_order.computer_id', '=', 'computers.id')
+            ->select('orders.*', 'users.name', 'computers.productname', 'computers.brand', 'computers.price', 'computers.dayGet')
             ->where('orders.id', $id)->first();
         return view('order.detail', ['order'=>$order]);
     }

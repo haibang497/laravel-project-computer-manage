@@ -23,7 +23,7 @@ class ComputerFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name,
+            'productname' => $this->faker->name,
             'brand'=>$this->faker->name,
             'price'=>rand(0, 999),
             'dayGet'=>now(),
