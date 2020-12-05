@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
     <div class="card-body">
@@ -17,7 +17,7 @@
                 <tbody>
                 <tr @foreach($cate_product as $cate_pro)>
                     <td>{{$cate_pro->id}}</td>
-                    <td>{{$cate_pro->name}}</td>
+                    <td>{{$cate_pro->productname}}</td>
                     <td>{{$cate_pro->brand}}</td>
                     <td>{{$cate_pro->price}}</td>
                     <td>{{$cate_pro->dayGet}}</td>

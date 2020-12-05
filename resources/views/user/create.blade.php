@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
 
@@ -9,7 +9,7 @@
                 <strong>Warning!</strong> Please check your input code<br><br>
                 <ul>
                     @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
+                        <x-package-alert type="danger">{{$error}}</x-package-alert>
                     @endforeach
                 </ul>
             </div>

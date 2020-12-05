@@ -10,8 +10,9 @@ class OrderController extends Controller
 {
     public function index()
     {
-        $orders=DB::table('orders')->join('users', 'orders.user_id', '=', 'users.id')
-            ->select('orders.id', 'orders.title', 'orders.dayCreate', 'orders.status', 'users.name')->get();
+//        $orders=DB::table('orders')->join('users', 'orders.user_id', '=', 'users.id')
+//            ->select('orders.id', 'orders.title', 'orders.dayCreate', 'orders.status', 'users.name')->get();
+        $orders=Order::all();
         return view('order.show', ['orders'=>$orders]);
     }
     public function create()
@@ -24,12 +25,13 @@ class OrderController extends Controller
     }
     public function show($id)
     {
-        $order=DB::table('users')
-            ->join('orders', 'users.id', '=', 'orders.user_id')
-            ->join('computer_order', 'orders.id', '=', 'computer_order.order_id')
-            ->join('computers', 'computer_order.computer_id', '=', 'computers.id')
-            ->select('orders.*', 'users.name', 'computers.productname', 'computers.brand', 'computers.price', 'computers.dayGet')
-            ->where('orders.id', $id)->first();
+//        $order=DB::table('users')
+//            ->join('orders', 'users.id', '=', 'orders.user_id')
+//            ->join('computer_order', 'orders.id', '=', 'computer_order.order_id')
+//            ->join('computers', 'computer_order.computer_id', '=', 'computers.id')
+//            ->select('orders.*', 'users.name', 'computers.productname', 'computers.brand', 'computers.price', 'computers.dayGet')
+//            ->where('orders.id', $id)->first();
+        $order=Order::find($id)->first();
         return view('order.detail', ['order'=>$order]);
     }
     public function edit($id)
@@ -48,7 +50,8 @@ class OrderController extends Controller
     }
     public function destroy($id)
     {
-        //
+        DB::table('orders')->where('id', $id)->delete();
+        return back()->with('success', 'Delete Successfully');
     }
 
     public function getUser($id)

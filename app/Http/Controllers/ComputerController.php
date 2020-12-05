@@ -19,19 +19,18 @@ class ComputerController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-           'name'=>'required',
+           'productname'=>'required',
             'brand'=>'required',
             'price'=>'required',
             'dayGet'=>'required',
-            'image'=>'required',
+            'image'=>'required|mimes:jpg,jpeg,png,xlx,xls,pdf|max:2048',
             'category_id'=>'required'
         ]);
         DB::table('computers')->insert([
-            'name'=>$request->name,
+            'productname'=>$request->productname,
             'brand'=>$request->brand,
             'price'=>$request->price,
             'dayGet'=>$request->dayGet,
-            'image'=>$request->image,
             'category_id'=>$request->category_id
         ]);
         return back()->with('success', 'Add successfully');
@@ -48,23 +47,23 @@ class ComputerController extends Controller
     }
     public function update(Request $request, $id)
     {
-        $computer = new Computer();
-        $computer->name = $request->input('name');
+//        $computer = new Computer();
+        $computer = Computer::find($id);
+        $computer->productname = $request->input('productname');
         $computer->brand = $request->input('brand');
         $computer->price = $request->input('price');
         $computer->dayGet = $request->input('dayGet');
-        $computer->status = $request->input('image');
-        $computer->category_id = $request->input('category_id');
-        $affected = DB::table('computers')
-            ->where('id', $id)
-            ->update(['name' => $computer->name,
-                'brand' => $computer->brand,
-                'price' => $computer->price,
-                'dayGet' => $computer->dayGet,
-                'image' => $computer->image,
-                'category_id'=>$computer->category_id
-            ]);
-        return back()->with('success', 'Update Success');
+
+        if ($request->file()) {
+            $fileName = $request->file('image')->getClientOriginalName();
+            $filePath = $request->file('image')->storeAs('uploads', $fileName, 'public');
+            //tham số thứ 3 là chỉ lưu trên disk 'public', tham số thứ 1:  lưu trong thư mục 'uploads' của disk 'public'
+            $computer->image = '/storage/' . $filePath;
+            // $filepath='uploads/'+$fileName --> $profile->avatar = 'storage/uploads/tenfile --> đường dẫn hình trong thư mục public
+        }
+
+        $computer->save();
+        return back()->with('success', 'Update Success')->with('file', $fileName);
     }
     public function destroy($id)
     {

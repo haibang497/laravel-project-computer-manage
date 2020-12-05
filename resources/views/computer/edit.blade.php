@@ -1,4 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.app1')
+
+@section('js')
+    <script>
+        $('#image').on('change',function(){
+            //get the file name
+            var fileName = $(this).val();
+            //replace the "Choose a file" label
+            $(this).next('.custom-file-label').html(fileName);
+        })
+    </script>
+@endsection('js')
 
 @section('content')
 
@@ -7,12 +18,12 @@
         @if(Session::has('success'))
             <x-package-alert type="success" message="Update success"/>
         @endif
-        <form class="computer" action="{{ route('computers.update',['computer' => $computer->id]) }}" method="POST">
+        <form class="computer" action="{{ route('computers.update',['computer' => $computer->id]) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="ame" placeholder="Enter full name" name="name" value="{{$computer->name}}">
+            <input type="text" class="form-control" id="ame" placeholder="Enter full name" name="productname" value="{{$computer->productname}}">
         </div>
         <div class="form-group">
             <label for="brand">Brand</label>
@@ -26,9 +37,11 @@
                 <label for="dayGet">Day Get</label>
                 <input type="date" class="form-control" id="dayGet" placeholder="Enter password" name="dayGet" value="{{$computer->dayGet}}">
             </div>
-            <div>
-                <label for="image">Status</label>
-                <input type="int" class="form-control" id="status" placeholder="Enter image" name="image" value="{{$computer->image}}">
+            <br/>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input " id="image" name="image" placeholder="Choose a file" >
+                <label for="image" class="custom-file-label">{{$computer->image}}</label>
+                <br/>
             </div>
         <button type="submit" class="btn btn-primary">Update</button>
         </form>

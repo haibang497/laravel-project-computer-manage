@@ -1,5 +1,5 @@
 
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
     <div class="card-body">
@@ -25,10 +25,10 @@
                 <tbody>
                 <tr @foreach($users as $user)>
                     <td>{{$user->id}}</td>
-                    <td>{{$user->name}}</td>
+                    <td>{{$user->productname}}</td>
                     <td>{{$user->brand}}</td>
                     <td>{{$user->price}}</td>
-                    <td>{{$user->image}}</td>
+                    <td><img src="{{$user->image}}" width="50" height="50"></td>
                     <td>{{$user->category->name}}</td>
                     <td><button class="btn btn-primary"><a href="/details/{{$user->id}}" style="color: white; text-decoration: none">Show</a></button>
                         <button class="btn btn-danger"><a href="/delete-computer/{{$user->id}}" style="color: white; text-decoration: none">Delete</a></button>

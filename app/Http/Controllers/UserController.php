@@ -79,7 +79,8 @@ class UserController extends Controller
     }
     public function destroy($id)
     {
-        //
+        DB::table('users')->where('id', $id)->delete();
+        return back()->with('success', 'Delete Successfully');
     }
 
     public function getOrder($id)

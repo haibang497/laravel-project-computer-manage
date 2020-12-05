@@ -17,5 +17,6 @@
             </div>
         </div>
     @include('includes.script_footer')
+        @yield('js')
     </body>
 </html>

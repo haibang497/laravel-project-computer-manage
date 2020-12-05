@@ -47,3 +47,5 @@ Route::resource('orders', OrderController::class);
 Route::resource('detail-order', OrderController::class);
 Route::get('/get-order/{id}', [UserController::class, 'getOrder']);
 Route::get('/get-user/{id}', [OrderController::class, 'getUser']);
+Route::get('/delete-order/{id}', [OrderController::class, 'destroy'])->name('order.delete');
+Route::get('/delete-user/{id}', [UserController::class, 'destroy'])->name('user.delete');

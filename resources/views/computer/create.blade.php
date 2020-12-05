@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
 
@@ -20,8 +20,8 @@
         <form action="{{route('computers.store')}}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                <label for="productname">Name</label>
+                <input type="text" class="form-control" id="productname" placeholder="Enter product name" name="productname">
             </div>
             <div class="form-group">
                 <label for="brand">Brand</label>
