@@ -25,33 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/addCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/addCat.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/showProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showProduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/computer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/computer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/order/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/order/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/order/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/userlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/userlist.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +217,7 @@
       <workItem from="1606997637526" duration="966000" />
       <workItem from="1607048261718" duration="3076000" />
       <workItem from="1607058238395" duration="92000" />
-      <workItem from="1607129914894" duration="10933000" />
+      <workItem from="1607129914894" duration="11045000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
@@ -322,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606825518470</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finish upload image and detail order">
+      <created>1607142129557</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607142129557</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +345,8 @@
     <MESSAGE value="change relationship" />
     <MESSAGE value="get information from order detail" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="finish upload image and detail order" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish upload image and detail order" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029105663">
@@ -403,10 +385,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607050410125" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606825529418">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607142137758">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606825529418" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607142137758" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1606532866807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
