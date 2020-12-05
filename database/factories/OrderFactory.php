@@ -23,10 +23,8 @@ class OrderFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => User::all()->random()->id,
-            'title' => $this->faker->sentence,
-            'status'=>$this->faker->word,
-            'dayCreate'=>$this->faker->dateTime
+            'user_id' => User::all()->random()->id
+
         ];
     }
 }
