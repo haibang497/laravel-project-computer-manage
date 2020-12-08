@@ -11,7 +11,8 @@
                     <th>Name</th>
                     <th>Brand</th>
                     <th>Price</th>
-                    <th>Day get</th>
+                    <th>Image</th>
+                    <th>Day Get</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -20,6 +21,7 @@
                     <td>{{$cate_pro->productname}}</td>
                     <td>{{$cate_pro->brand}}</td>
                     <td>{{$cate_pro->price}}</td>
+                    <td><img src="{{$cate_pro->image}}" width="50" height="50"></td>
                     <td>{{$cate_pro->dayGet}}</td>
                 </tr @endforeach>
                 </tbody>

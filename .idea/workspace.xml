@@ -25,7 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile" />
+    <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/showProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showProduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/computer/computer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/computer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/show.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,6 +224,8 @@
       <workItem from="1607048261718" duration="3076000" />
       <workItem from="1607058238395" duration="92000" />
       <workItem from="1607129914894" duration="11045000" />
+      <workItem from="1607147688685" duration="240000" />
+      <workItem from="1607232116681" duration="1982000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
@@ -303,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607142129557</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finish upload image">
+      <created>1607147708870</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607147708870</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +361,8 @@
     <MESSAGE value="get information from order detail" />
     <MESSAGE value="fix" />
     <MESSAGE value="finish upload image and detail order" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish upload image and detail order" />
+    <MESSAGE value="finish upload image" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish upload image" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029105663">
