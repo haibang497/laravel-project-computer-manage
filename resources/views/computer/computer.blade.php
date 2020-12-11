@@ -19,7 +19,6 @@
                     <th>Brand</th>
                     <th>Price</th>
                     <th>Image</th>
-                    <th>Category</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -30,7 +29,6 @@
                     <td>{{$user->brand}}</td>
                     <td>{{$user->price}}</td>
                     <td><img src="{{$user->image}}" width="50" height="50"></td>
-                    <td>{{$user->category->name}}</td>
                     <td><button class="btn btn-primary"><a href="/details/{{$user->id}}" style="color: white; text-decoration: none">Show</a></button>
                         <button class="btn btn-danger"><a href="/delete-computer/{{$user->id}}" style="color: white; text-decoration: none">Delete</a></button>
                         <button class="btn btn-primary"><a href="/computers/{{$user->id}}/edit" style="color: white; text-decoration: none">Edit</a></button>

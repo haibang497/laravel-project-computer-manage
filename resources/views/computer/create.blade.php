@@ -1,5 +1,16 @@
 @extends('layouts.app1')
 
+@section('js')
+    <script>
+        $('#image').on('change',function(){
+            //get the file name
+            var fileName = $(this).val();
+            //replace the "Choose a file" label
+            $(this).next('.custom-file-label').html(fileName);
+        })
+    </script>
+@endsection('js')
+
 @section('content')
 
     <div class="container">
@@ -17,7 +28,10 @@
         @if(Session::has('success') )
             <x-package-alert type="success" message="Add successfully"/>
         @endif
-        <form action="{{route('computers.store')}}" method="POST">
+        @if(Session::has('fail') )
+            <x-package-alert type="danger" message="Add Failed"/>
+        @endif
+        <form action="{{route('computers.store')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="productname">Name</label>
@@ -36,8 +50,11 @@
                 <input type="date" class="form-control" id="dayGet" name="dayGet" >
             </div>
             <div>
-                <label for="image">Image</label>
-                <input type="int" class="form-control" id="image" placeholder="Enter status" name="image" >
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input " id="image" name="image" placeholder="Choose a file" >
+                    <label for="image" class="custom-file-label">Choose file</label>
+                    <br/>
+                </div>
             </div>
             <div>
                 <label for="category_id">Category ID</label>

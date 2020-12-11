@@ -10,7 +10,8 @@ class ComputerController extends Controller
 {
     public function index()
     {
-        //
+        $users = \App\Models\Computer::all();
+        return view('computer.computer', ['users' => $users]);
     }
     public function create()
     {
@@ -23,17 +24,38 @@ class ComputerController extends Controller
             'brand'=>'required',
             'price'=>'required',
             'dayGet'=>'required',
-            'image'=>'required|mimes:jpg,jpeg,png,xlx,xls,pdf|max:2048',
+            'image'=>'required',
             'category_id'=>'required'
         ]);
-        DB::table('computers')->insert([
-            'productname'=>$request->productname,
-            'brand'=>$request->brand,
-            'price'=>$request->price,
-            'dayGet'=>$request->dayGet,
-            'category_id'=>$request->category_id
-        ]);
-        return back()->with('success', 'Add successfully');
+//        DB::table('computers')->insert([
+//            'productname'=>$request->productname,
+//            'brand'=>$request->brand,
+//            'price'=>$request->price,
+//            'dayGet'=>$request->dayGet,
+//            'category_id'=>$request->category_id
+//        ]);
+//        return back()->with('success', 'Add successfully');
+
+        $computer = new Computer();
+        $computer->productname = $request->input('productname');
+        $computer->brand = $request->input('brand');
+        $computer->price = $request->input('price');
+        $computer->dayGet = $request->input('dayGet');
+        $computer->category_id=$request->input('category_id');
+
+        if ($request->file()) {
+            $fileName = $request->file('image')->getClientOriginalName();
+            $filePath = $request->file('image')->storeAs('uploads', $fileName, 'public');
+            //tham số thứ 3 là chỉ lưu trên disk 'public', tham số thứ 1:  lưu trong thư mục 'uploads' của disk 'public'
+            $computer->image = '/storage/' . $filePath;
+            // $filepath='uploads/'+$fileName --> $profile->avatar = 'storage/uploads/tenfile --> đường dẫn hình trong thư mục public
+            $computer->save();
+            return back()->with('success', 'Add Successfully')->with('file', $fileName);
+        }
+
+        return back()->with('fail', 'Add Failed');
+
+
     }
     public function show($id)
     {
