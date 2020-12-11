@@ -32,18 +32,18 @@ Route::get('checkage/{age?}', function ($age) {
     return view('user.userlist', ['users' => $users]);
 })->middleware(\App\Http\Middleware\CheckAge::class);
 
-Route::resource('users', UserController::class)->middleware('auth');
+Route::resource('users', UserController::class)->middleware(['auth', 'role:admin']);
 Route::resource('view-detail', UserController::class)->middleware('auth');
 Route::resource('details', ComputerController::class)->middleware('auth');
-Route::resource('computers', ComputerController::class)->middleware('auth');
+Route::resource('computers', ComputerController::class)->middleware(['auth', 'role:editor']);
 Route::get('/delete-computer/{id}', [ComputerController::class, 'destroy'])->name('computer.delete')->middleware('auth');
-Route::resource('categories', CategoryController::class)->middleware('auth');
+Route::resource('categories', CategoryController::class)->middleware(['auth', 'role:editor']);
 Route::post('/add-new-cate', [CategoryController::class, 'addCate'])->name('categories.addCate')->middleware('auth');
 Route::get('/addcate', [CategoryController::class, 'create'])->middleware('auth');
 Route::get('/get-computer/{id}', [CategoryController::class, 'getProductFromCate'])->middleware('auth');
 Route::get('/categories/{id}', [CategoryController::class], 'show')->middleware('auth');
 Route::get('/delete-categories/{id}', [CategoryController::class, 'destroy'])->name('category.delete')->middleware('auth');
-Route::resource('orders', OrderController::class)->middleware('auth');
+Route::resource('orders', OrderController::class)->middleware(['auth', 'role:editor']);
 Route::resource('detail-order', OrderController::class)->middleware('auth');
 Route::get('/get-order/{id}', [UserController::class, 'getOrder'])->middleware('auth');
 Route::get('/get-user/{id}', [OrderController::class, 'getUser'])->middleware('auth');
