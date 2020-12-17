@@ -27,13 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/order/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +229,9 @@
       <workItem from="1607479001140" duration="5000" />
       <workItem from="1607606857459" duration="3409000" />
       <workItem from="1607644887395" duration="3999000" />
-      <workItem from="1607660139970" duration="1416000" />
+      <workItem from="1607660139970" duration="3429000" />
+      <workItem from="1607907634698" duration="1234000" />
+      <workItem from="1608194315323" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
@@ -334,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607645848562</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="finish project">
+      <created>1607661704149</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607661704149</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +383,8 @@
     <MESSAGE value="finish upload image and detail order" />
     <MESSAGE value="finish upload image" />
     <MESSAGE value="fix error add with image" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error add with image" />
+    <MESSAGE value="finish project" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029105663">
@@ -418,10 +423,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607050410125" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607645859700">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607661710763">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607645859700" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607661710763" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1606532866807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
