@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="card-body">
-        <h3 style="text-align: center">User Detail</h3>
+        <h3 style="text-align: center">Profile</h3>
         <div style="border: 1px solid black">
             <h4 style="text-align: center">{{$user->name}}</h4>
             <h4>Full Name: {{$user->full_name}}</h4>

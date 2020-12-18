@@ -21,11 +21,7 @@ class CreateComputersTable extends Migration
             $table->integer('price');
             $table->date('dayGet');
             $table->string('image')->nullable();
-            $table->foreignId('category_id')
-                ->nullable()
-                ->constrained('categories')
-                ->cascadeOnDelete()
-                ->cascadeOnUpdate();
+            $table->foreignId('category_id')->references('id')->on('categories')->onDelete('cascade');
         });
     }
 

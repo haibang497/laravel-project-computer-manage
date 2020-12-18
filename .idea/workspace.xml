@@ -27,8 +27,12 @@
   <component name="ChangeListManager">
     <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/order/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_22_125956_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_22_125956_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,6 +236,8 @@
       <workItem from="1607660139970" duration="3429000" />
       <workItem from="1607907634698" duration="1234000" />
       <workItem from="1608194315323" duration="322000" />
+      <workItem from="1608197385060" duration="1354000" />
+      <workItem from="1608250633616" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
