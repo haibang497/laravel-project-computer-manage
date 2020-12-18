@@ -31,7 +31,6 @@ Route::get('checkage/{age?}', function ($age) {
 //    $users = DB::table('users')->get();
     return view('user.userlist', ['users' => $users]);
 })->middleware(\App\Http\Middleware\CheckAge::class);
-
 Route::resource('users', UserController::class)->middleware(['auth', 'role:admin']);
 Route::resource('view-detail', UserController::class)->middleware('auth');
 Route::resource('details', ComputerController::class)->middleware('auth');
