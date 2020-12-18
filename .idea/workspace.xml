@@ -20,37 +20,19 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:haibang" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7f1220-2d03-487c-96fc-d5eaae5ea6cf" name="Default Changelist" comment="update profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_100938_create_computers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/addCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/addCat.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showCat.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/showProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/showProduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/computer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/computer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/computer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/computer/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/order/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/order/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/order/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_22_125956_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_22_125956_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/userlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/userlist.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +163,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iwIcArX15VPhQW790uEisyEdKB" />
@@ -243,7 +226,18 @@
       <workItem from="1606997637526" duration="966000" />
       <workItem from="1607048261718" duration="3076000" />
       <workItem from="1607058238395" duration="92000" />
-      <workItem from="1607129914894" duration="10933000" />
+      <workItem from="1607129914894" duration="11045000" />
+      <workItem from="1607147688685" duration="240000" />
+      <workItem from="1607232116681" duration="1982000" />
+      <workItem from="1607427952018" duration="3890000" />
+      <workItem from="1607479001140" duration="5000" />
+      <workItem from="1607606857459" duration="3409000" />
+      <workItem from="1607644887395" duration="3999000" />
+      <workItem from="1607660139970" duration="3429000" />
+      <workItem from="1607907634698" duration="1234000" />
+      <workItem from="1608194315323" duration="322000" />
+      <workItem from="1608197385060" duration="1354000" />
+      <workItem from="1608250633616" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1604224939049</created>
@@ -322,7 +316,35 @@
       <option name="project" value="LOCAL" />
       <updated>1606825518470</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finish upload image and detail order">
+      <created>1607142129557</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607142129557</updated>
+    </task>
+    <task id="LOCAL-00013" summary="finish upload image">
+      <created>1607147708870</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607147708870</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix error add with image">
+      <created>1607645848562</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607645848562</updated>
+    </task>
+    <task id="LOCAL-00015" summary="finish project">
+      <created>1607661704149</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607661704149</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +361,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="haibang" />
                       </list>
                     </value>
                   </entry>
@@ -364,7 +386,11 @@
     <MESSAGE value="change relationship" />
     <MESSAGE value="get information from order detail" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="finish upload image and detail order" />
+    <MESSAGE value="finish upload image" />
+    <MESSAGE value="fix error add with image" />
+    <MESSAGE value="finish project" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604029105663">
@@ -403,10 +429,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607050410125" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606825529418">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607661710763">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606825529418" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607661710763" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1606532866807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="card-body">
+        <h1 style="text-align: center">Category</h1>
         <a href="{{route('categories.create')}}" class="btn btn-success" role="button">Add New</a>
         @if(Session::has('success'))
             <x-package-alert type="success" message="Delete successfully"/>
